@@ -95,5 +95,5 @@ The navigation wraps without JavaScript, the speaker grid changes from two colum
 
 ## Links
 
-- GitHub repository URL: _Add link here_
-- GitHub Pages URL: _Add link here_
+- GitHub repository URL: https://github.com/rownak2385/ph-b14-assignment1.git
+- GitHub Pages URL: https://rownak2385.github.io/ph-b14-assignment1/
