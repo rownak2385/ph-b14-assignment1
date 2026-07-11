@@ -14,7 +14,7 @@ This section introduces interactive DevConf experiences beyond regular talks, sh
 ```text
 Continue the existing DEVCONF 2026 project.
 
-Replace the AI Challenge placeholder with an original section called “Beyond the Stage.”
+STEP 6: Replace the AI Challenge placeholder with an original section called “Beyond the Stage.”
 
 This is the officially AI-assisted section of the assignment.
 
@@ -172,6 +172,8 @@ State that AI helped with concept development, content organization, responsive 
 
 ## Manual Adjustments
 Add a checklist placeholder where I can later record my own changes.
+
+Do not place the prompts from Steps 1–5 into PROMPTS.md.
 
 At the end:
 
