@@ -334,7 +334,76 @@ main {
   font-size: 1rem;
 }
 
-/* 8. Responsive Foundation */
+/* 8. Speakers Section */
+.speakers-section {
+  padding-block: var(--section-spacing);
+  background-color: var(--color-white);
+}
+
+.speakers-grid {
+  /*
+    The grid mirrors the reference layout with two equal columns on wider
+    screens. minmax(0, 1fr) keeps long content from forcing overflow.
+  */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.speaker-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background-color: var(--color-white);
+  transition:
+    border-color var(--transition-duration) ease,
+    transform var(--transition-duration) ease;
+}
+
+.speaker-card:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-4px);
+}
+
+.speaker-card img {
+  /*
+    The fixed aspect ratio keeps every card image the same height while
+    object-fit crops portraits cleanly into the landscape frame.
+  */
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+}
+
+.speaker-card__content {
+  padding: 20px 22px 24px;
+}
+
+.speaker-card__track {
+  color: var(--color-royal-blue);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.speaker-card h3 {
+  margin-top: 8px;
+  color: var(--color-dark-navy);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.speaker-card__content p:last-child {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* 9. Responsive Foundation */
 @media (max-width: 640px) {
   :root {
     --section-spacing: 72px;
@@ -342,6 +411,20 @@ main {
 
   .container {
     width: min(100% - 24px, var(--container-width));
+  }
+
+  .speakers-grid {
+    /*
+      Speaker cards become one column on mobile so images and text keep
+      comfortable reading width.
+    */
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 36px;
+  }
+
+  .speaker-card__content {
+    padding: 18px 18px 22px;
   }
 }
 
@@ -434,5 +517,16 @@ main {
     min-width: 190px;
     margin-top: 72px;
     padding-block: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .speaker-card {
+    transition: border-color var(--transition-duration) ease;
+  }
+
+  /* Motion-sensitive users still get a border change without movement. */
+  .speaker-card:hover {
+    transform: none;
   }
 }
