@@ -11,22 +11,52 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <!-- Header and Navigation -->
     <header class="site-header" id="top">
       <nav class="site-nav" aria-label="Main navigation">
-        <div class="container">
-          <!-- Navbar content will be added in a later step. -->
+        <div class="container nav-wrapper">
+          <a class="brand" href="#top" aria-label="DEVCONF 2026 home">
+            <span class="brand__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M9.4 8.2 5.8 12l3.6 3.8 1.2-1.2L8.2 12l2.4-2.6-1.2-1.2Z" />
+                <path d="m14.6 8.2-1.2 1.2 2.4 2.6-2.4 2.6 1.2 1.2 3.6-3.8-3.6-3.8Z" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span>DEVCONF</span>
+              <span>2026</span>
+            </span>
+          </a>
+
+          <ul class="nav-menu" aria-label="Conference sections">
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a class="button button--primary" href="#pricing">Register Now</a>
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
       <!-- Hero Section -->
       <section class="hero-section" id="hero" aria-labelledby="hero-title">
-        <div class="container">
-          <h1 id="hero-title" class="visually-hidden">DEVCONF 2026</h1>
-          <!-- Hero content will be added in a later step. -->
+        <div class="container hero-content">
+          <h1 id="hero-title">Code. <em>Connect.</em> Create</h1>
+          <p>
+            Join 4,000+ engineers, founders, and builders at the premier
+            developer conference of 2026. Three days of cutting-edge talks,
+            hands-on workshops, and meaningful connections.
+          </p>
+          <a class="button button--primary hero-button" href="#pricing">Register Now</a>
         </div>
       </section>
 
