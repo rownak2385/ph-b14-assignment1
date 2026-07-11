@@ -8,8 +8,8 @@ DEVCONF 2026 is a beginner-friendly responsive landing page for a fictional deve
 - Full-width photographic hero section
 - Meet the Speakers section
 - Secure Your Spot pricing section
+- Beyond the Stage AI-assisted section
 - Site footer with social links
-- AI Challenge section placeholder only
 
 ## Technology Stack
 
@@ -91,7 +91,7 @@ The navigation wraps without JavaScript, the speaker grid changes from two colum
 - No Lorem Ipsum text remains
 - Speaker and pricing content is unique and accurate for a fictional event
 - The page works at desktop, tablet, mobile, and small-mobile widths
-- The AI Challenge prompt will be added later in Step 6
+- The AI Challenge prompt is documented in `PROMPTS.md`
 
 ## Links
 
